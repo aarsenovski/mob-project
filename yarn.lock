@@ -39,6 +39,14 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
+"@playwright/test@^1.28.1":
+  version "1.28.1"
+  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.28.1.tgz#e5be297e024a3256610cac2baaa9347fd57c7860"
+  integrity sha512-xN6spdqrNlwSn9KabIhqfZR7IWjPpFK1835tFNgjrlysaSezuX8PYUwaz38V/yI8TJLG9PkAMEXoHRXYXlpTPQ==
+  dependencies:
+    "@types/node" "*"
+    playwright-core "1.28.1"
+
 "@types/node@*":
   version "18.11.3"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.3.tgz#78a6d7ec962b596fc2d2ec102c4dd3ef073fea6a"
@@ -1058,6 +1066,11 @@ pify@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
   integrity sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==
+
+playwright-core@1.28.1:
+  version "1.28.1"
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.28.1.tgz#8400be9f4a8d1c0489abdb9e75a4cc0ffc3c00cb"
+  integrity sha512-3PixLnGPno0E8rSBJjtwqTwJe3Yw72QwBBBxNoukIj3lEeBNXwbNiKrNuB1oyQgTBw5QHUhNO3SteEtHaMK6ag==
 
 pretty-bytes@^5.6.0:
   version "5.6.0"
