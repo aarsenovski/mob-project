@@ -1,2 +1,0 @@
-- add mochawesome reporter
-- add Custom commands

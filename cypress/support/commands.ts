@@ -1,6 +1,5 @@
-/// <reference types="cypress" />
+export {}
 
-import cypress = require('cypress')
 declare global {
   namespace Cypress {
     interface Chainable {
