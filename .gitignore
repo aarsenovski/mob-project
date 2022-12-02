@@ -4,3 +4,4 @@ cypress/reports
 /playwright-report/
 /playwright/.cache/
 screenshot.png
+package-lock.json
