@@ -6,3 +6,4 @@ cypress/reports
 screenshot.png
 package-lock.json
 unittest/coverage
+response.json
