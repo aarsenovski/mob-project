@@ -5,3 +5,4 @@ cypress/reports
 /playwright/.cache/
 screenshot.png
 package-lock.json
+unittest/coverage
