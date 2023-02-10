@@ -1,3 +1,4 @@
+import 'cypress-wait-until'
 export {}
 
 declare global {
