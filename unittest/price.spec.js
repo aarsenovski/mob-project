@@ -1,3 +1,9 @@
+//Given requirements:
+// product A = 1.5$ price
+// product B = 2$ price
+// If a sum calculation includes 5 of more products, then the total sum should include a 10% discount
+
+//Possible test cases
 // TC1: 1 product A
 // TC2: 1 product B
 // TC3: 5 products which includes A and B
@@ -11,7 +17,6 @@ const calculateTotalPrice = (products) => {
 
   products.forEach((product) => {
     // product === 'A' ? totalPrice += productA : totalPrice += productB
-
     if (product === 'A') {
       totalPrice += productA
     } else if (product === 'B') {
