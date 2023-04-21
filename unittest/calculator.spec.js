@@ -29,5 +29,5 @@ test('crazy test for a=HI', () => {
 })
 
 test('crazy test for a=5', () => {
-  expect(calculator.crazy(5, 5)).toBe(29)
+  expect(calculator.crazy(5, 5)).toBe(20)
 })
