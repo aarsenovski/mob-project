@@ -9,11 +9,15 @@ on:
 jobs:
   mob-pipeline:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: unittest
+
     steps:
       - uses: actions/checkout@v3
 
       - name: install dependencies
-        run: cd unittest && yarn
+        run: yarn
 
       - name: run unit test coverage
-        run: cd unittest && yarn run coverage
+        run: yarn run coverage
