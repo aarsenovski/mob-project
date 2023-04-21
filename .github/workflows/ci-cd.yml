@@ -1,0 +1,19 @@
+name: ci-cd
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  mob-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: install dependencies
+        run: cd unittest && yarn
+
+      - name: run unit test coverage
+        run: cd unittest && yarn run coverage
