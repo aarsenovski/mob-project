@@ -1,0 +1,23 @@
+name: ci-cd
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  cypress-e2e:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: cypress/e2e
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: install dependencies
+        run: yarn
+
+      - name: run cypress tests
+        run: yarn cypress run
