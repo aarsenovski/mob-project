@@ -11,5 +11,5 @@ jobs:
       - run: yarn
         name: install
 
-      - run: yarn run cypress
+      - run: yarn run cypress:run
         name: cypress
