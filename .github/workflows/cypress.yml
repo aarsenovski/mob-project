@@ -1,0 +1,12 @@
+name: cypress-workflow
+on: pull_request
+
+jobs:
+  cypress-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: checkout
+
+      - uses: cypress-io/github-action@v5
+        name: cypress

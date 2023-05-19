@@ -10,7 +10,8 @@
     "typescript": "^4.8.4"
   },
   "scripts": {
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {}
 }
