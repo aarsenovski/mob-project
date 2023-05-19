@@ -1,4 +1,4 @@
-import { previewList } from '../support/preview'
+import { previewList, getViewport } from '../support/preview'
 
 previewList.forEach((preview) => {
   describe(`Cart  ${preview}`, () => {
@@ -13,12 +13,17 @@ previewList.forEach((preview) => {
 
       cy.log(a, b)
     })
+  })
+})
 
-    it('should use custom command', () => {
-      cy.visit('http://www.google.com')
+describe(`Multiple viewports CI`, () => {
+  beforeEach(() => {
+    cy.viewport(getViewport(Cypress.env("VIEWPORT")))
+  })
+  it('should use custom command', () => {
+    cy.visit('http://www.google.com')
 
-      // we don't need to import custom commands but can use them straight away with cy.methodName()
-      cy.search('Frasers')
-    })
+    // we don't need to import custom commands but can use them straight away with cy.methodName()
+    cy.search('Frasers')
   })
 })
