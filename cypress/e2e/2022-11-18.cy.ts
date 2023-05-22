@@ -1,9 +1,8 @@
 it('Cypress async', () => {
-  cy.visit('https://www.google.com')
+  cy.visit('https://www.sportsdirect.com.my/')
 
   // cypress commands are `Promise like`
   // if cy.get() is resolved it yields its subject to the next command etc.
-  cy.contains('Reject all').parent().click()
 
   // if we want to do something with the subject we can use .then() or .should()
   // this .then() is similar to the use with native Promises
