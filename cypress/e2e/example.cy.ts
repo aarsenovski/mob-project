@@ -1,3 +1,3 @@
 it('Works', () => {
-  cy.visit('https://www.sportsdirect.com.my/')
+  cy.visit('https://www.google.com/?hl=fry')
 })

@@ -1,5 +1,5 @@
 it('Cypress async', () => {
-  cy.visit('https://www.sportsdirect.com.my/')
+  cy.visit('https://www.google.com/?hl=fry')
   // cypress commands are `Promise like`
   // if cy.get() is resolved it yields its subject to the next command etc.
 
