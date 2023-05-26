@@ -10,7 +10,8 @@ declare global {
 }
 
 Cypress.Commands.add('search', (keyword) => {
-  cy.get('[data-testid="input-search-field"]').type('adidas')
+  cy.get('[id="L2AGLb"]').click()
+  cy.get('[name="q"]').type(keyword)
 })
 
 Cypress.Commands.add('register', (username, password) => {
