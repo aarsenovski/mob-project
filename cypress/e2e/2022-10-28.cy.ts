@@ -21,7 +21,7 @@ describe(`Multiple viewports CI`, () => {
     cy.viewport(getViewport(Cypress.env('VIEWPORT')))
   })
   it('should use custom command', () => {
-    cy.visit('https://www.google.com/?hl=fr')
+    cy.visit('https://www.bing.com')
 
     // we don't need to import custom commands but can use them straight away with cy.methodName()
     cy.search('Frasers')

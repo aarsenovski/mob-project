@@ -1,3 +1,5 @@
+import { any } from 'cypress/types/bluebird'
+
 export {}
 
 declare global {
@@ -10,8 +12,6 @@ declare global {
 }
 
 Cypress.Commands.add('search', (keyword) => {
-  // cy.contains('Tout accepter').scrollIntoView().click()
-  cy.get('[id="L2AGLb"]').scrollIntoView().click()
   cy.get('[name="q"]').type(keyword)
 })
 
