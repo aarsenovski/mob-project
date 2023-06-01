@@ -10,7 +10,7 @@ declare global {
 }
 
 Cypress.Commands.add('search', (keyword) => {
-  cy.contains('Tout accepter').click()
+  cy.get('[id="L2AGLb"]').click()
   cy.get('[name="q"]').type(keyword)
 })
 
