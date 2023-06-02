@@ -1,4 +1,3 @@
-import { any } from 'cypress/types/bluebird'
 import { getViewport } from '../support/preview'
 
 getViewport(Cypress.env('VIEWPORT')).forEach((preview) => {
