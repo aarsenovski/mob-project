@@ -1,5 +1,3 @@
-import { any } from 'cypress/types/bluebird'
-
 export {}
 
 declare global {

@@ -1,7 +1,7 @@
 import { getViewport } from '../support/preview'
 
 getViewport(Cypress.env('VIEWPORT')).forEach((preview) => {
-  describe('this is another spec file', () => {
+  describe(`${preview} this is another spec file`, () => {
     beforeEach(() => {
       cy.viewport(preview)
     })
