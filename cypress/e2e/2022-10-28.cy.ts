@@ -1,6 +1,7 @@
-import { getViewport, previewList } from '../support/preview'
+import { any } from 'cypress/types/bluebird'
+import { getViewport } from '../support/preview'
 
-previewList.forEach((preview) => {
+getViewport(Cypress.env('VIEWPORT')).forEach((preview) => {
   describe(`Cart  ${preview}`, () => {
     beforeEach(() => {
       cy.viewport(preview)
@@ -13,17 +14,11 @@ previewList.forEach((preview) => {
 
       cy.log(a, b)
     })
-  })
-})
 
-describe(`Multiple viewports CI`, () => {
-  beforeEach(() => {
-    cy.viewport(getViewport(Cypress.env('VIEWPORT')))
-  })
-  it('should use custom command', () => {
-    cy.visit('https://www.bing.com')
-
-    // we don't need to import custom commands but can use them straight away with cy.methodName()
-    cy.search('Frasers')
+    it('should use custom command', () => {
+      cy.visit('https://www.bing.com')
+      // we don't need to import custom commands but can use them straight away with cy.methodName()
+      cy.search('Frasers')
+    })
   })
 })

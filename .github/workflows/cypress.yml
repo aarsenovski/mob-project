@@ -4,6 +4,10 @@ on: pull_request
 jobs:
   cypress-pipeline:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        viewport: ['DESKTOP', 'MOBILE']
+
     steps:
       - uses: actions/checkout@v3
         name: checkout
@@ -11,4 +15,4 @@ jobs:
       - uses: cypress-io/github-action@v5
         name: cypress
         env:
-          CYPRESS_VIEWPORT: MOBILE
+          CYPRESS_VIEWPORT: ${{ matrix.viewport }}
