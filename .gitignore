@@ -7,3 +7,4 @@ screenshot.png
 package-lock.json
 unittest/coverage
 response.json
+cypress.env.json

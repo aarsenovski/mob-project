@@ -1,3 +1,3 @@
 it('Works', () => {
-  cy.visit('https://www.google.com')
+  cy.visit('https://www.google.com/?hl=fr')
 })

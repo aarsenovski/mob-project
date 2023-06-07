@@ -6,5 +6,6 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on)
     },
+    video: false,
   },
 })

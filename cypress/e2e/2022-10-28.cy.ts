@@ -1,6 +1,6 @@
-import { previewList } from '../support/preview'
+import { getViewport } from '../support/preview'
 
-previewList.forEach((preview) => {
+getViewport(Cypress.env('VIEWPORT')).forEach((preview) => {
   describe(`Cart  ${preview}`, () => {
     beforeEach(() => {
       cy.viewport(preview)
@@ -15,8 +15,7 @@ previewList.forEach((preview) => {
     })
 
     it('should use custom command', () => {
-      cy.visit('http://www.google.com')
-
+      cy.visit('https://www.bing.com')
       // we don't need to import custom commands but can use them straight away with cy.methodName()
       cy.search('Frasers')
     })
